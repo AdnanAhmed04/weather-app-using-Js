@@ -21,13 +21,13 @@ function fetchWeather() {
             temp_maxElement.textContent = `Max Temperature  ${data.main.temp_max} °C`;
 
             const pressure = document.getElementById('pressure');
-            pressure.textContent = `Pressure  ${data.main.pressure} psf`;
+            pressure.textContent = `Pressure  ${data.main.pressure} Pa`;
 
             const humidity = document.getElementById('humidity');
             humidity.textContent = ` Humidity  ${data.main.humidity} g / kg`;
 
             const speed = document.getElementById('speed');
-            speed.textContent = `Wind speed  ${data.wind.speed} v`;
+            speed.textContent = `Wind speed  ${data.wind.speed} m/s`;
         })
         .catch((error) => {
             alert('incorrect input . . . ')
