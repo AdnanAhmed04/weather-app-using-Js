@@ -28,6 +28,14 @@ function fetchWeather() {
 
             const speed = document.getElementById('speed');
             speed.textContent = `Wind speed  ${data.wind.speed} m/s`;
+            console.log(temperatureElement)
+            console.log(feelLikeElement)
+            console.log(temp_minElement)
+            console.log(temp_maxElement)
+            console.log(pressure)
+            console.log(humidity)
+
+
         })
         .catch((error) => {
             alert('incorrect input . . . ')
